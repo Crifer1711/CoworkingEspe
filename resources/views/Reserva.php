@@ -81,10 +81,10 @@
             padding: 20px;
             border: 1px solid #666f88;
             border-radius: 10px;
-            max-width: 700px; /* Ancho máximo del modal */
-            max-height: 700px; /* Altura máxima del modal */
-            overflow-y: auto; /* Agregar scroll vertical si el contenido excede la altura */
-            margin: 0 auto; /* Centrar horizontalmente */
+            max-width: 700px; 
+            max-height: 700px; 
+            overflow-y: auto; 
+            margin: 0 auto; 
             margin-bottom: 20px;
         }
 
@@ -97,9 +97,9 @@
         }
 
         .modal-content label {
-            flex: 1 0 160px; /* Ancho mínimo del label y máximo de 170px */
-            margin-right: 20px; /* Espacio entre el label y el input */
-            margin-bottom: -15px;  /* Espacio entre el label y el input */
+            flex: 1 0 160px; 
+            margin-right: 20px; 
+            margin-bottom: -15px;  
             margin-top: 10px;
         }
 
@@ -107,7 +107,7 @@
         .modal-content input[type="number"],
         .modal-content input[type="date"],
         .modal-content select {
-            flex: 2 0 calc(100% - 210px); /* El input ocupa el espacio restante, restando el ancho del label y el margen */
+            flex: 2 0 calc(100% - 210px); 
             padding: 10px;
             border: 1px solid #ccc;
             border-radius: 5px;
@@ -117,7 +117,7 @@
         }
 
         .modal-content button[type="submit"] {
-            width: 100%; /* Botón ocupando todo el ancho disponible */
+            width: 100%; 
             padding: 12px;
             background-color: #4CAF50;
             color: white;
@@ -127,23 +127,23 @@
             font-size: 16px;
             text-align: center;
             transition: background-color 0.3s;
-            margin-top: 50px; /* Espacio arriba del botón */
-            display: flex; /* Cambiar a flexbox para colocar elementos en línea */
+            margin-top: 50px; 
+            display: flex; 
         }
 
         #reservation-form {
-            margin-right: 100px; /* Aumenta el margen superior para separarlo más del modal anterior */
+            margin-right: 100px; 
         }
 
         #adicional-info {
-            margin-top: 100px; /* Aumenta el margen superior para separarlo más del modal anterior */
-            margin-bottom: 100px; /* Ajusta el margen derecho para separarlo del borde del contenedor */
-            width: 40%; /* Ajusta el ancho del contenedor adicional */
+            margin-top: 100px; 
+            margin-bottom: 100px; 
+            width: 40%; 
         }
 
         @media (max-width: 768px) {
             #adicional-info {
-                width: 150%; /* Ajusta el ancho del contenedor adicional en dispositivos más pequeños */
+                width: 150%; 
             }
         }
 
@@ -158,18 +158,18 @@
         }
 
         #tiempo_uso {
-            display: inline-block; /* Hace que el bloque de tiempo de uso se muestre en línea */
+            display: inline-block; 
             margin-bottom: 10px;
         }
 
         #hora_inicio_fin,
         #fecha_inicio_fin {
             display: none;
-            margin-right: 350px; /* Ajusta el espacio entre el bloque de tiempo de uso y los bloques de hora o fecha */
+            margin-right: 350px; 
             margin-bottom: 20px;
         }
 
-        /* Ajusta el espacio entre los radio buttons y su texto */
+        
         .modal-content input[type="radio"] {
             margin-right: 10px;
             margin-top: 10px;
@@ -240,10 +240,10 @@
             right: 0;
             display: none;
             transform: translateY(-50%);
-            width: 100%; /* Ancho deseado del contenedor */
-            margin-right: 20px; /* Margen derecho para separarlo del borde */
-            padding: 10px; /* Ajusta el relleno según sea necesario */
-            border-radius: 5px; /* Añade bordes redondeados si es necesario */ 
+            width: 100%; 
+            margin-right: 20px; 
+            padding: 10px; 
+            border-radius: 5px; 
         }
     </style>
 </head>
@@ -402,11 +402,11 @@
 
         function resetearFormulario() {
             document.getElementById('confirmation-modal').style.display = 'none';
-            document.getElementById('reservation-form').style.display = 'none'; // Oculta el formulario
-            document.getElementById('adicional-info').style.display = 'none'; // Oculta el contenedor adicional
-            document.getElementById('reservation-form').reset(); // Reinicia el formulario
-            document.getElementById('hora_inicio_fin').style.display = 'none'; // Oculta los campos de hora
-            document.getElementById('fecha_inicio_fin').style.display = 'none'; // Oculta los campos de fecha
+            document.getElementById('reservation-form').style.display = 'none'; 
+            document.getElementById('adicional-info').style.display = 'none'; 
+            document.getElementById('reservation-form').reset(); 
+            document.getElementById('hora_inicio_fin').style.display = 'none'; 
+            document.getElementById('fecha_inicio_fin').style.display = 'none'; 
             document.getElementById('terms-modal').style.display = 'block';
         }
 
